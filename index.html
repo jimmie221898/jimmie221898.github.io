@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Byrne – Embedded Portfolio</title>
+  <style>
+    @font-face {
+        font-family: 'Inter';
+        src: url('fonts/Inter-Regular.woff2') format('woff2'),
+             url('fonts/Inter-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Inter';
+        src: url('fonts/Inter-Bold.woff2') format('woff2'),
+             url('fonts/Inter-Bold.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #222;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      background: linear-gradient(to right, #3b82f6, #60a5fa);
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      z-index: 10;
+      border-bottom: 3px solid #2563eb;
+      border-radius: 0 0 12px 12px;
+    }
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .top-info {
+      text-align: right;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .resume-button {
+      display: inline-block;
+      padding: 8px 16px;
+      margin-top: 10px;
+      background-color: #fff;
+      color: #2563eb;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .resume-button:hover {
+      background-color: #2563eb;
+      color: #fff;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .tags {
+      margin-top: 15px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 6px 14px;
+      margin: 4px;
+      font-size: 13px;
+      background: #e0e7ff;
+      color: #1e3a8a;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      margin-top: 50px;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: #000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+    }
+    .project-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+    .project-title {
+      padding: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      background: linear-gradient(to right, #f0f4ff, #e0e7ff);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="name">James Byrne</div>
+  <div class="top-info">
+    james@example.com<br>
+    (555) 555-5555<br>
+    University of Waterloo – Electrical Engineering<br>
+    6th Co-op – Fall 2025<br>
+    <a href="resume.pdf" class="resume-button" target="_blank">Resume</a>
+  </div>
+</header>
+
+<div class="section">
+  <h2>About Me</h2>
+  <p>
+    I’m an Electrical Engineering student at the University of Waterloo specializing in embedded
+    firmware development for STM32 microcontrollers, FreeRTOS systems, motor-control interfaces,
+    I2C/SPI/CAN drivers, and hardware bring-up. I enjoy building dependable real-time firmware and
+    designing complete embedded solutions end-to-end.
+  </p>
+
+  <div class="tags">
+    <span class="tag">STM32</span>
+    <span class="tag">FreeRTOS</span>
+    <span class="tag">Embedded Firmware</span>
+    <span class="tag">C/C++</span>
+    <span class="tag">PCB Design</span>
+    <span class="tag">KiCad</span>
+    <span class="tag">I2C/SPI/CAN</span>
+    <span class="tag">Real-Time Systems</span>
+  </div>
+
+  <div class="projects">
+    <a class="project-card" href="project1.html">
+      <img src="project1_img1.jpg" alt="Project 1">
+      <div class="project-title">Project 1</div>
+    </a>
+    <a class="project-card" href="project2.html">
+      <img src="project2_img1.jpg" alt="Project 2">
+      <div class="project-title">Project 2</div>
+    </a>
+    <a class="project-card" href="project3.html">
+      <img src="project3_img1.jpg" alt="Project 3">
+      <div class="project-title">Project 3</div>
+    </a>
+    <a class="project-card" href="project4.html">
+      <img src="project4_img1.jpg" alt="Project 4">
+      <div class="project-title">Project 4</div>
+    </a>
+    <a class="project-card" href="project5.html">
+      <img src="project5_img1.jpg" alt="Project 5">
+      <div class="project-title">Project 5</div>
+    </a>
+    <a class="project-card" href="project6.html">
+      <img src="project6_img1.jpg" alt="Project 6">
+      <div class="project-title">Project 6</div>
+    </a>
+    <a class="project-card" href="project7.html">
+      <img src="project7_img1.jpg" alt="Project 7">
+      <div class="project-title">Project 7</div>
+    </a>
+    <a class="project-card" href="project8.html">
+      <img src="project8_img1.jpg" alt="Project 8">
+      <div class="project-title">Project 8</div>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
