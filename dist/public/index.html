@@ -76,6 +76,15 @@ Error generating stack: `+l.message+`
 </script>
 
     <div id="root"></div>
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <script
       defer
       src="%VITE_ANALYTICS_ENDPOINT%/umami"
