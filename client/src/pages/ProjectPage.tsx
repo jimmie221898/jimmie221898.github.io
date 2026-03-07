@@ -15,8 +15,13 @@ import {
   Github,
 } from "lucide-react";
 import { Link, useParams } from "wouter";
+import { useEffect } from "react";
 
 export default function ProjectPage() {
+   // ✅ Scroll to top when this component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const params = useParams<{ id: string }>();
   const project = projects.find((p) => p.id === params.id);
 
