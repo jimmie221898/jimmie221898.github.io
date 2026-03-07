@@ -18,11 +18,31 @@ function Router() {
   );
 }
 
+import { useEffect } from "react";
+import { useLocation } from "wouter";
+
+const ScrollToTop = () => {
+  // wouter's useLocation returns [location, setLocation]
+  const [pathname] = useLocation();
+
+  useEffect(() => {
+    // We use 'instant' to avoid a sliding animation that feels broken
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant", 
+    });
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
+          <ScrollToTop />
           <Toaster />
           <Router />
         </TooltipProvider>
