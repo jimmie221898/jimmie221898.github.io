@@ -54,11 +54,11 @@ export default function Home() {
               className="font-display text-6xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[0.95] mb-6 animate-fade-up-delay-1"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Your
+              James
               <br />
-              <em className="text-primary not-italic">Name</em>
+              <em className="text-primary not-italic">Eugene</em>
               <br />
-              Here
+              Byrne
             </h1>
 
             {/* Tagline */}
@@ -66,8 +66,8 @@ export default function Home() {
               className="font-body text-xl text-muted-foreground mb-10 leading-relaxed animate-fade-up-delay-2"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              Software developer & designer crafting thoughtful digital
-              experiences. Passionate about clean code and elegant solutions.
+              Embedded systems engineer building reliable firmware and hardware driven software systems. 
+              Focused on low level design, real-time systems, and practical engineering solutions.
             </p>
 
             {/* CTA Buttons */}
@@ -132,7 +132,7 @@ export default function Home() {
               {/* Social links */}
               <div className="flex flex-col gap-3">
                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/james-byrne-3645aa2a8/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-200 group"
@@ -145,11 +145,11 @@ export default function Home() {
                     className="font-body text-sm link-underline"
                     style={{ fontFamily: "var(--font-body)" }}
                   >
-                    linkedin.com/in/yourprofile
+                    LinkedIn
                   </span>
                 </a>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/jimmie221898"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-200 group"
@@ -162,11 +162,11 @@ export default function Home() {
                     className="font-body text-sm link-underline"
                     style={{ fontFamily: "var(--font-body)" }}
                   >
-                    github.com/yourusername
+                    Github
                   </span>
                 </a>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:jimmie221898@gmail.com"
                   className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-200 group"
                 >
                   <Mail
@@ -177,7 +177,7 @@ export default function Home() {
                     className="font-body text-sm link-underline"
                     style={{ fontFamily: "var(--font-body)" }}
                   >
-                    your.email@example.com
+                    Email
                   </span>
                 </a>
               </div>
@@ -214,14 +214,17 @@ export default function Home() {
               {/* Skills tags */}
               <div className="pt-4 flex flex-wrap gap-2">
                 {[
-                  "JavaScript",
-                  "TypeScript",
-                  "React",
-                  "Node.js",
+                  "C",
+                  "C++",
                   "Python",
-                  "SQL",
+                  "Embedded Systems",
+                  "FreeRTOS",
+                  "STM32",
+                  "CAN",
+                  "MQTT",
+                  "POSIX",
                   "Git",
-                  "Figma",
+                  "MATLAB",
                 ].map((skill) => (
                   <span
                     key={skill}
