@@ -42,20 +42,21 @@ export default function ProjectPage() {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* HERO */}
-      <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
+      {/* HERO - Minimalist 180px strip */}
+      <section className="relative h-[180px] overflow-hidden bg-secondary/20">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-80"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+        {/* Subtle gradient overlay to keep it feeling clean */}
+        <div className="absolute inset-0 bg-background/40" />
 
-        <div className="absolute top-24 left-0 right-0">
+        <div className="absolute bottom-6 left-0 right-0">
           <div className="container">
             <span
-              className="font-mono-custom text-5xl font-medium text-white/20 select-none animate-fade-up"
+              className="font-mono-custom text-2xl font-medium text-white/60 select-none"
               style={{ fontFamily: "var(--font-mono)" }}
             >
               {project.number}
@@ -63,6 +64,7 @@ export default function ProjectPage() {
           </div>
         </div>
       </section>
+      
 
       {/* CONTENT */}
       <section className="py-16 lg:py-24">
@@ -258,6 +260,119 @@ export default function ProjectPage() {
           </div>
         </div>
       </section>
+
+      {/* ── PROJECT NAVIGATION ───────────────────────────────── */}
+      <section className="border-t border-border py-12">
+        <div className="container">
+          <div className="flex items-center justify-between gap-8">
+            {/* Previous */}
+            {prevProject ? (
+              <Link href={`/project/${prevProject.id}`}>
+                <div className="group flex items-center gap-4 cursor-pointer">
+                  <ArrowLeft
+                    size={20}
+                    className="text-muted-foreground group-hover:text-primary group-hover:-translate-x-1 transition-all duration-200"
+                  />
+                  <div>
+                    <p
+                      className="font-mono-custom text-xs text-muted-foreground uppercase tracking-widest mb-1"
+                      style={{ fontFamily: "var(--font-mono)" }}
+                    >
+                      Previous
+                    </p>
+                    <p
+                      className="font-display text-base font-semibold text-foreground group-hover:text-primary transition-colors duration-200"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {prevProject.title}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            ) : (
+              <div />
+            )}
+
+            {/* Back to all */}
+            <Link href="/#projects">
+              <span
+                className="font-mono-custom text-xs text-muted-foreground hover:text-primary transition-colors duration-200 uppercase tracking-widest"
+                style={{ fontFamily: "var(--font-mono)" }}
+              >
+                All Projects
+              </span>
+            </Link>
+
+            {/* Next */}
+            {nextProject ? (
+              <Link href={`/project/${nextProject.id}`}>
+                <div className="group flex items-center gap-4 cursor-pointer text-right">
+                  <div>
+                    <p
+                      className="font-mono-custom text-xs text-muted-foreground uppercase tracking-widest mb-1"
+                      style={{ fontFamily: "var(--font-mono)" }}
+                    >
+                      Next
+                    </p>
+                    <p
+                      className="font-display text-base font-semibold text-foreground group-hover:text-primary transition-colors duration-200"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {nextProject.title}
+                    </p>
+                  </div>
+                  <ArrowRight
+                    size={20}
+                    className="text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all duration-200"
+                  />
+                </div>
+              </Link>
+            ) : (
+              <div />
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* ── GALLERY ──────────────────────────────────────────── */}
+      {project.gallery && project.gallery.length > 0 && (
+        <section className="py-16 lg:py-24 border-t border-border">
+          <div className="container">
+            <h2
+              className="font-display text-2xl font-semibold text-foreground mb-8"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Project Gallery
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {project.gallery.map((imageUrl: string, index: number) => (
+                <div
+                  key={index}
+                  className="overflow-hidden rounded-xl bg-card border border-border"
+                >
+                  <img
+                    src={imageUrl}
+                    alt={`Gallery image ${index + 1}`}
+                    className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── FOOTER ───────────────────────────────────────────── */}
+      <footer className="border-t border-border py-8">
+        <div className="container flex items-center justify-center">
+          <span
+            className="font-mono-custom text-xs text-muted-foreground"
+            style={{ fontFamily: "var(--font-mono)" }}
+          >
+            © {new Date().getFullYear()} Your Name · Built with care
+          </span>
+        </div>
+      </footer>
     </div>
   );
 }
