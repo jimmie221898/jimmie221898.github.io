@@ -39,7 +39,7 @@ export default function ProjectPage() {
     currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div key={project.id} className="min-h-screen bg-background">
       <Navbar />
 
       {/* HERO - Minimalist 180px strip */}
@@ -64,12 +64,10 @@ export default function ProjectPage() {
           </div>
         </div>
       </section>
-      
 
       {/* CONTENT */}
       <section className="py-16 lg:py-24">
         <div className="container">
-
           {/* Back */}
           <Link href="/#projects">
             <div className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-200 mb-12 group animate-fade-up">
@@ -87,10 +85,8 @@ export default function ProjectPage() {
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-
             {/* MAIN CONTENT */}
             <div className="lg:col-span-2">
-
               <div className="flex items-center gap-3 mb-4 animate-fade-up-delay-1">
                 <div className="v-rule h-6" />
                 <span
@@ -184,13 +180,11 @@ export default function ProjectPage() {
                   ))}
                 </ul>
               </div>
-
             </div>
 
             {/* SIDEBAR */}
             <div className="lg:col-span-1 animate-fade-up-delay-2">
               <div className="sticky top-24 space-y-8">
-
                 <div className="p-6 bg-card border border-border rounded-xl">
                   <h3
                     className="font-display text-sm font-semibold text-foreground mb-4 uppercase tracking-wide"
@@ -251,12 +245,10 @@ export default function ProjectPage() {
                         <ArrowUpRight size={14} />
                       </a>
                     )}
-
                   </div>
                 )}
               </div>
             </div>
-
           </div>
         </div>
       </section>

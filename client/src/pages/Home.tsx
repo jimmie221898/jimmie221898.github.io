@@ -362,9 +362,8 @@ export default function Home() {
               className="font-body text-base text-muted-foreground mb-10 leading-relaxed"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              I'm currently open to new opportunities. Whether you have a
-              project in mind, a question, or just want to say hello — my inbox
-              is always open.
+              I'm currently seeking Fall co-op opportunities. If you have a question or 
+              just want to get in touch, my inbox is always open.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
