@@ -48,12 +48,12 @@ export const projects: Project[] = [
       "Overcame high density component soldering and multi rail power challenges.",
     ],
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/project-1-BKkBLDoxtm7rxMyMcPLM8H.webp",
+      "/photos/Finished Front.jpeg",
     gallery: [
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/project-1-BKkBLDoxtm7rxMyMcPLM8H.webp",
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/project-1-image2.webp",
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/project-1-pcb-layout1.webp",
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/project-1-pcb-layout2.webp",
+      "/photos/Finished Front.jpeg",
+      "/photos/Finished Back.jpeg",
+      "/photos/Routing Front.png",
+      "/photos/Routing Back.png",
     ],
   },
   {
@@ -90,10 +90,10 @@ export const projects: Project[] = [
       "Experienced full design process from challenge to breadboard prototype and up to PCB design.",
     ],
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/project-2-HQtpuaAW6Hz5RfuqH9g3WY.webp",
+      "/photos/PCB.PNG",
     gallery: [
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/project-2-pcb-layout.webp",
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/project-2-timer-board.webp",
+      "/photos/PCB.PNG",
+      "/photos/timer_board.jpeg",
     ],
   },
   {
@@ -127,7 +127,7 @@ export const projects: Project[] = [
       "Combined mechanical, electrical and embedded control design into a unified automotive testing project.",
     ],
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/project-3-hpXkTnSzDonzE5GEGuFfxk.webp",
+      "/photos/wiring harness.webp",
   },
   {
     id: "project-4",
@@ -158,6 +158,6 @@ export const projects: Project[] = [
       "Integrated firmware and hardware into a functional and safe prototype.",
     ],
     image:
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/project-4-hBHMW3TAgjpuuvFHHLGwjU.webp",
+      "/photos/ST_NUCLEO-F446RE_Nucleo_Development_Board_STM32F4_Series_Arduino_Compatible.webp",
   },
 ];

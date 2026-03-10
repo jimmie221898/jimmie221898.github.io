@@ -81,7 +81,7 @@ export default function Home() {
                 <ArrowRight size={16} />
               </a>
               <a
-                href="/resume.pdf"
+                href="/resume/James Byrne Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 px-6 py-3 border border-border bg-background/80 text-foreground rounded-md font-body font-medium text-sm hover:bg-secondary transition-all duration-200 backdrop-blur-sm"
                 style={{ fontFamily: "var(--font-body)" }}
