@@ -64,7 +64,7 @@ export default function Home() {
 
             {/* Tagline */}
             <p
-              className="font-body text-xl text-muted-foreground mb-10 leading-relaxed animate-fade-up-delay-2"
+              className="font-body text-xl text-muted-foreground mt-6 mb-10 leading-relaxed animate-fade-up-delay-2"
               style={{ fontFamily: "var(--font-body)" }}
             >
               Embedded systems engineer building reliable firmware and hardware integrated software.
