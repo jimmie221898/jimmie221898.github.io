@@ -17,7 +17,7 @@ import {
 import { Link } from "wouter";
 
 const HERO_BG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663400920061/WYsCWKHK6MtUQkkPkq6v6m/hero-bg-97CJvH8hdDwThTxJ2JEKze.webp";
+  "/photos/hero-bg-97CJvH8hdDwThTxJ2JEKze.webp";
 
 export default function Home() {
   return (
@@ -397,7 +397,7 @@ export default function Home() {
             className="font-display text-sm font-medium text-foreground"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Your Name
+            James Byrne
           </span>
           <div className="flex items-center gap-6">
             <a
@@ -427,7 +427,7 @@ export default function Home() {
             className="font-mono-custom text-xs text-muted-foreground"
             style={{ fontFamily: "var(--font-mono)" }}
           >
-            © {new Date().getFullYear()} · Built with care
+            © {new Date().getFullYear()}
           </span>
         </div>
       </footer>

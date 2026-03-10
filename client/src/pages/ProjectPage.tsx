@@ -361,7 +361,7 @@ export default function ProjectPage() {
             className="font-mono-custom text-xs text-muted-foreground"
             style={{ fontFamily: "var(--font-mono)" }}
           >
-            © {new Date().getFullYear()} Your Name · Built with care
+            © {new Date().getFullYear()} James Byrne
           </span>
         </div>
       </footer>
