@@ -40,10 +40,14 @@ export default function Navbar() {
         <nav className="flex items-center gap-8">
           <Link href="/">
             <span
+              onClick={(e) => {
+                if (location === "/") {
+                  e.preventDefault(); // prevent unnecessary navigation
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
               className={`font-body text-sm font-medium transition-colors duration-200 link-underline ${
-                location === "/"
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-foreground"
+                location === "/" ? "text-primary" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Home

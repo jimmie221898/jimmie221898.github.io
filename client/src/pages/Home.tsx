@@ -50,7 +50,8 @@ export default function Home() {
             </div>
 
             {/* Name */}
-            <h1
+            <a
+              href="/"
               className="font-display text-6xl md:text-7xl lg:text-8xl font-bold text-foreground leading-[0.95] mb-6 animate-fade-up-delay-1"
               style={{ fontFamily: "var(--font-display)" }}
             >
@@ -59,7 +60,7 @@ export default function Home() {
               <em className="text-primary not-italic">Eugene</em>
               <br />
               Byrne
-            </h1>
+            </a>
 
             {/* Tagline */}
             <p
