@@ -363,7 +363,7 @@ export default function Home() {
               className="font-body text-base text-muted-foreground mb-10 leading-relaxed"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              I'm currently seeking Fall co-op opportunities. If you have a question or 
+              I'm currently seeking Fall 2026 co-op opportunities. If you have a question or 
               just want to get in touch, my inbox is always open.
             </p>
 

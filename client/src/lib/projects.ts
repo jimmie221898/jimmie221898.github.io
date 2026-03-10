@@ -80,7 +80,7 @@ export const projects: Project[] = [
       "GPIO",
       "RGB LEDs",
       "Dual Seven Segment Display",
-      "C++",
+      "C",
       "VS Code",
       "Proteus",
     ],

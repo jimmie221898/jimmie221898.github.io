@@ -93,7 +93,7 @@ export default function ProjectPage() {
                   className="font-mono-custom text-xs tracking-widest uppercase text-primary"
                   style={{ fontFamily: "var(--font-mono)" }}
                 >
-                  Case Study
+                  Projects
                 </span>
               </div>
 
