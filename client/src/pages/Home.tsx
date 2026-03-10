@@ -66,8 +66,8 @@ export default function Home() {
               className="font-body text-xl text-muted-foreground mb-10 leading-relaxed animate-fade-up-delay-2"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              Embedded systems engineer building reliable firmware and hardware driven software systems. 
-              Focused on low level design, real-time systems, and practical engineering solutions.
+              Embedded systems engineer building reliable firmware and hardware integrated software.
+              Focused on low level development, real-time systems, and practical engineering solutions.
             </p>
 
             {/* CTA Buttons */}
@@ -189,26 +189,25 @@ export default function Home() {
                 className="font-body text-base leading-relaxed text-foreground"
                 style={{ fontFamily: "var(--font-body)" }}
               >
-                Hi! I'm a software developer based in [Your City]. I love
-                building things that live on the internet — from clean,
-                accessible user interfaces to robust backend systems.
+                I'm an Electrical Engineering student at the University of Waterloo with a focus on 
+                embedded systems, firmware development and hardware-software integration. I enjoy 
+                working close to hardware, building reliable low-level firmware, developing drivers 
+                and creating practical engineering solutions that interact with real hardware. 
               </p>
               <p
-                className="font-body text-base leading-relaxed text-muted-foreground"
+                className="font-body text-base leading-relaxed text-foreground"
                 style={{ fontFamily: "var(--font-body)" }}
               >
-                I studied [Your Degree] at [Your University] and have since
-                worked on projects ranging from web applications to data
-                pipelines. I'm always looking to learn new technologies and
-                tackle interesting problems.
+                Through co-ops and school projects, I have worked on embedded firmware, hardware diagnostics 
+                and test platforms for real world systems. I'm particularly interested in real-time systems, 
+                driver development and designing robust solutions that interact with physical hardware. 
               </p>
               <p
-                className="font-body text-base leading-relaxed text-muted-foreground"
+                className="font-body text-base leading-relaxed text-foreground"
                 style={{ fontFamily: "var(--font-body)" }}
               >
-                When I'm not coding, you can find me [your hobbies/interests].
-                I'm currently open to full-time roles and freelance
-                opportunities.
+                Outside of school and work, I enjoy playing hockey and flag football, watching the Seahawks and gaming. 
+                I am currently seeking Fall co-op opportunities. 
               </p>
 
               {/* Skills tags */}
@@ -370,7 +369,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:jimmie221898@gmail.com"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-md font-body font-medium text-sm hover:bg-primary/90 transition-all duration-200"
                 style={{ fontFamily: "var(--font-body)" }}
               >
@@ -378,7 +377,7 @@ export default function Home() {
                 Say Hello
               </a>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/james-byrne-3645aa2a8/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-border text-foreground rounded-md font-body font-medium text-sm hover:bg-secondary transition-all duration-200"
@@ -403,7 +402,7 @@ export default function Home() {
           </span>
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/jimmie221898"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -411,7 +410,7 @@ export default function Home() {
               <Github size={18} />
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/james-byrne-3645aa2a8/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
@@ -419,7 +418,7 @@ export default function Home() {
               <Linkedin size={18} />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:jimmie221898@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-200"
             >
               <Mail size={18} />
