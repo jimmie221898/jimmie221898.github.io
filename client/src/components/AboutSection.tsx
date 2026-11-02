@@ -162,8 +162,9 @@ export default function AboutSection() {
                 className="font-body text-base leading-relaxed text-foreground"
                 style={{ fontFamily: "var(--font-body)" }}
               >
-                Outside of school and work, I enjoy playing hockey and flag
-                football, watching the Seahawks and gaming.
+                Outside of school and work, I enjoy working on my family's farm,
+                playing hockey and flag football, watching the Seahawks and
+                gaming.
               </p>
             </div>
 

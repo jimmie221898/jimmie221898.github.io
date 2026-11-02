@@ -60,9 +60,7 @@ export default function Home() {
             >
               James
               <br />
-              <em className="text-primary not-italic">Eugene</em>
-              <br />
-              Byrne
+              <em className="text-primary not-italic">Byrne</em>
             </a>
 
             {/* Tagline */}

@@ -23,11 +23,11 @@ export const projects: Project[] = [
     id: "project-1",
     number: "01",
     title: "STM32 Remote Debugger",
-    tagline: "Raspberry Pi CM4 + STLINK-V3 MODS",
+    tagline: "Raspberry Pi CM4 + STLINK-V3MODS",
     overview:
       "Designed and assembled a custom carrier board enabling remote firmware development and real-time debugging of STM32 microcontrollers over ethernet.",
     contributions: [
-      "Designed a multi-layer PCB using KiCad integrating Raspberry Pi CM4 and STLINK-V3 MODS.",
+      "Designed a multi-layer PCB using KiCad integrating Raspberry Pi CM4 and STLINK-V3MODS.",
       "Implemented remote SWD debugging using OpenOCD and GDB server.",
       "Routed high-speed interfaces (ethernet, USB, SD card) with signal integrity considerations.",
       "Developed flexible power architecture supporting PoE and USB-C with current limiting and protection.",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     technologies: [
       "STM32",
       "Raspberry Pi CM4",
-      "STLINK-V3 MODS",
+      "STLINK-V3MODS",
       "PoE",
       "USB-C",
       "OpenOCD",
