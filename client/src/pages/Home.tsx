@@ -148,8 +148,9 @@ export default function Home() {
           {/* Project grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project) => (
-              <Link key={project.id} href={`/project/${project.id}`}>
-                <div className="project-card group bg-card rounded-xl overflow-hidden border border-border cursor-pointer">
+              <Link key={project.id} href={`/project/${project.id}`} className="block h-full">
+                {/* Full row height, with the CTA pinned to the bottom, so cards in a row match however their tags wrap */}
+                <div className="project-card group h-full flex flex-col bg-card rounded-xl overflow-hidden border border-border cursor-pointer">
                   {/* Thumbnail */}
                   <div className="relative overflow-hidden aspect-[4/3]">
                     <img
@@ -169,7 +170,7 @@ export default function Home() {
                   </div>
 
                   {/* Card content */}
-                  <div className="p-6">
+                  <div className="p-6 flex flex-col flex-1">
                     <h3
                       className="font-display text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-200"
                       style={{ fontFamily: "var(--font-display)" }}
@@ -205,7 +206,7 @@ export default function Home() {
                     </div>
 
                     {/* CTA */}
-                    <div className="flex items-center gap-1 text-primary font-body text-sm font-medium group-hover:gap-2 transition-all duration-200">
+                    <div className="mt-auto flex items-center gap-1 text-primary font-body text-sm font-medium group-hover:gap-2 transition-all duration-200">
                       <span style={{ fontFamily: "var(--font-body)" }}>
                         View project
                       </span>
