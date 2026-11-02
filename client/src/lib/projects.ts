@@ -25,11 +25,11 @@ export const projects: Project[] = [
     title: "STM32 Remote Debugger",
     tagline: "Raspberry Pi CM4 + STLINK-V3 MODS",
     overview:
-      "Designed and assembled a custom carrier board enabling remote firmware development and real time debugging of STM32 microcontrollers over ethernet.",
+      "Designed and assembled a custom carrier board enabling remote firmware development and real-time debugging of STM32 microcontrollers over ethernet.",
     contributions: [
-      "Designed a multi layer PCB using KiCad integrating Raspberry Pi CM4 and STLINK-V3 MODS.",
+      "Designed a multi-layer PCB using KiCad integrating Raspberry Pi CM4 and STLINK-V3 MODS.",
       "Implemented remote SWD debugging using OpenOCD and GDB server.",
-      "Routed high speed interfaces (ethernet, USB, SD card) with signal integrity considerations.",
+      "Routed high-speed interfaces (ethernet, USB, SD card) with signal integrity considerations.",
       "Developed flexible power architecture supporting PoE and USB-C with current limiting and protection.",
       "Assembled, tested and validated the board on real STM32 targets.",
     ],
@@ -45,15 +45,14 @@ export const projects: Project[] = [
     ],
     outcomes: [
       "Enabled remote flashing, breakpoints and debugging without direct connection to the hardware.",
-      "Overcame high density component soldering and multi rail power challenges.",
+      "Overcame high-density component soldering and multi-rail power challenges.",
     ],
-    image:
-      "/photos/Finished Front.jpeg",
+    image: "/photos/finished-front.webp",
     gallery: [
-      "/photos/Finished Front.jpeg",
-      "/photos/Finished Back.jpeg",
-      "/photos/Routing Front.png",
-      "/photos/Routing Back.png",
+      "/photos/finished-front.webp",
+      "/photos/finished-back.webp",
+      "/photos/routing-front.webp",
+      "/photos/routing-back.webp",
     ],
   },
   {
@@ -62,13 +61,13 @@ export const projects: Project[] = [
     title: "Water Reservoir Irrigation Controller",
     tagline: "STM32 Nucleo Multi-Zone System",
     overview:
-      "Developed a scaled embedded system controller for multi zone water reservoir irrigation system, automated pump operations and water distribution.",
+      "Developed a scaled embedded system controller for multi-zone water reservoir irrigation system, automated pump operations and water distribution.",
     contributions: [
       "Designed firmware on an STM32 Nucleo MCU to control pump speed (PWM), servo valves and water level sensing via an ultrasonic sensor.",
-      "Implemented UART and GPIO interfaces for manual control, terminal reporting, RGB LED indicators and dual seven segment displays.",
-      "Developed a scaled time simulation logic to run a 24 hour irrigation cycle in a compressed demo time.",
+      "Implemented UART and GPIO interfaces for manual control, terminal reporting, RGB LED indicators and dual seven-segment displays.",
+      "Developed a scaled time simulation logic to run a 24-hour irrigation cycle in a compressed demo time.",
       "Assembled a timer board PCB to keep track of and display system time.",
-      "Created a breadboard prototype to test and validate real time operation.",
+      "Created a breadboard prototype to test and validate real-time operation.",
       "Designed a custom PCB shield to replace the breadboard prototype, integrating all sensor and actuator connections.",
     ],
     technologies: [
@@ -79,22 +78,18 @@ export const projects: Project[] = [
       "UART",
       "GPIO",
       "RGB LEDs",
-      "Dual Seven Segment Display",
+      "Dual Seven-Segment Display",
       "C",
       "VS Code",
       "Proteus",
     ],
     outcomes: [
-      "Successfully automated multi zone irrigation with various restrictions.",
+      "Successfully automated multi-zone irrigation with various restrictions.",
       "Enabled visualization of water levels, pump operations and timings via terminal and display.",
       "Experienced full design process from challenge to breadboard prototype and up to PCB design.",
     ],
-    image:
-      "/photos/PCB.PNG",
-    gallery: [
-      "/photos/PCB.PNG",
-      "/photos/timer_board.jpeg",
-    ],
+    image: "/photos/PCB.PNG",
+    gallery: ["/photos/PCB.PNG", "/photos/timer-board.webp"],
   },
   {
     id: "project-3",
@@ -104,9 +99,9 @@ export const projects: Project[] = [
     overview:
       "Designed and built a modular engine test bench using OEM harnesses from a Ford F-150 and a Ford Escape to safely test and validate fuel injectors, ignition components, throttle bodies and crankshaft systems without requiring a complete vehicle.",
     contributions: [
-      "Reverse engineered OEM engine harnesses to isolate and interface with fuel injectors, ignition coils and throttle bodies.",
-      "Designed a motor driven flywheel system with Arduino based speed control and RPM display via LCD interface to mechanically rotate the engine, enabling controlled crankshaft testing.",
-      "Built a spark plug test enclosure with a hand held enabling switch and protective container to ensure safe ignition testing.",
+      "Reverse-engineered OEM engine harnesses to isolate and interface with fuel injectors, ignition coils and throttle bodies.",
+      "Designed a motor-driven flywheel system with Arduino-based speed control and RPM display via LCD interface to mechanically rotate the engine, enabling controlled crankshaft testing.",
+      "Built a spark plug test enclosure with a handheld enabling switch and protective container to ensure safe ignition testing.",
       "Designed an injector test system with a transparent acrylic enclosure for spray pattern visualization.",
       "Created a standalone throttle body tester to validate actuation and response.",
     ],
@@ -126,8 +121,7 @@ export const projects: Project[] = [
       "Provided safe, repeatable diagnostics for ignition, injection and throttle systems.",
       "Combined mechanical, electrical and embedded control design into a unified automotive testing project.",
     ],
-    image:
-      "/photos/wiring harness.webp",
+    image: "/photos/wiring harness.webp",
   },
   {
     id: "project-4",
@@ -135,12 +129,12 @@ export const projects: Project[] = [
     title: "Appliance Energy Monitoring Prototype",
     tagline: "Real-Time Power Usage Detection",
     overview:
-      "Designed and built a low cost embedded system to monitor appliance voltage and current levels and estimate power usage in order to identify inefficient household devices.",
+      "Designed and built a low-cost embedded system to monitor appliance voltage and current levels and estimate power usage in order to identify inefficient household devices.",
     contributions: [
-      "Interfaced voltage and AC current sensors with an STM32 microcontroller for real time measurement of electrical loads.",
-      "Designed voltage divider circuit to safely scale voltage inputs within microcontrollers limits.",
-      "Configured and calibrated 12 bit ADC for accurate voltage and current readings.",
-      "Programmed C++ logic to calculate real time power and evaluate energy thresholds.",
+      "Interfaced voltage and AC current sensors with an STM32 microcontroller for real-time measurement of electrical loads.",
+      "Designed a voltage divider circuit to safely scale voltage inputs within the microcontroller's limits.",
+      "Configured and calibrated 12-bit ADC for accurate voltage and current readings.",
+      "Programmed C++ logic to calculate real-time power and evaluate energy thresholds.",
       "Integrated an LCD display to show live voltage, current and power calculation.",
       "Implemented LED indicators to visually signal different energy usage modes (normal, high, over threshold).",
     ],
@@ -153,7 +147,7 @@ export const projects: Project[] = [
       "Voltage Dividers",
     ],
     outcomes: [
-      "Successfully demonstrated real time voltage, current and power monitoring.",
+      "Successfully demonstrated real-time voltage, current and power monitoring.",
       "Created simple visual feedback with LEDs and LCD display.",
       "Integrated firmware and hardware into a functional and safe prototype.",
     ],
