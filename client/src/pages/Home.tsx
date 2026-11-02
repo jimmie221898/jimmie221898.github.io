@@ -6,6 +6,7 @@
  * Fade-up entrance animations, spring hover on project cards.
  */
 
+import AboutSection from "@/components/AboutSection";
 import CapstoneSection from "@/components/CapstoneSection";
 import Navbar from "@/components/Navbar";
 import { projects } from "@/lib/projects";
@@ -117,120 +118,7 @@ export default function Home() {
       </section>
 
       {/* ── ABOUT ────────────────────────────────────────────── */}
-      <section id="about" className="py-24 lg:py-32">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            {/* Left: Section label + heading */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="v-rule h-6" />
-                <span
-                  className="font-mono-custom text-xs tracking-widest uppercase text-primary"
-                  style={{ fontFamily: "var(--font-mono)" }}
-                >
-                  About
-                </span>
-              </div>
-              <h2
-                className="font-display text-4xl md:text-5xl font-semibold text-foreground leading-tight mb-8"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                A little bit
-                <br />
-                about <em className="text-primary not-italic">me</em>
-              </h2>
-
-              {/* Social links */}
-              <div className="flex flex-col gap-3">
-                <a
-                  href="https://www.linkedin.com/in/jeb22/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-200 group"
-                >
-                  <Linkedin
-                    size={18}
-                    className="group-hover:scale-110 transition-transform duration-200"
-                  />
-                  <span
-                    className="font-body text-sm link-underline"
-                    style={{ fontFamily: "var(--font-body)" }}
-                  >
-                    LinkedIn
-                  </span>
-                </a>
-                <a
-                  href="mailto:jimmie221898@gmail.com"
-                  className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-200 group"
-                >
-                  <Mail
-                    size={18}
-                    className="group-hover:scale-110 transition-transform duration-200"
-                  />
-                  <span
-                    className="font-body text-sm link-underline"
-                    style={{ fontFamily: "var(--font-body)" }}
-                  >
-                    Email
-                  </span>
-                </a>
-              </div>
-            </div>
-
-            {/* Right: Bio text */}
-            <div className="space-y-5">
-              <p
-                className="font-body text-base leading-relaxed text-foreground"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                I'm an Electrical Engineering student at the University of Waterloo, expected to graduate in April 2027, with a focus on
-                embedded systems, firmware development and hardware-software integration. I enjoy 
-                working close to hardware, building reliable low-level firmware, developing drivers 
-                and creating practical engineering solutions that interact with real hardware. 
-              </p>
-              <p
-                className="font-body text-base leading-relaxed text-foreground"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                Through co-ops and school projects, I have worked on embedded firmware, hardware diagnostics 
-                and test platforms for real-world systems. I'm particularly interested in real-time systems, 
-                driver development and designing robust solutions that interact with physical hardware. 
-              </p>
-              <p
-                className="font-body text-base leading-relaxed text-foreground"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                Outside of school and work, I enjoy playing hockey and flag football, watching the Seahawks and gaming.
-              </p>
-
-              {/* Skills tags */}
-              <div className="pt-4 flex flex-wrap gap-2">
-                {[
-                  "C",
-                  "C++",
-                  "Python",
-                  "Embedded Systems",
-                  "FreeRTOS",
-                  "STM32",
-                  "CAN",
-                  "MQTT",
-                  "POSIX",
-                  "Git",
-                  "MATLAB",
-                ].map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 bg-accent text-accent-foreground rounded-full font-mono-custom text-xs"
-                    style={{ fontFamily: "var(--font-mono)" }}
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AboutSection />
 
       {/* ── CAPSTONE ─────────────────────────────────────────── */}
       <CapstoneSection />
